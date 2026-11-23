@@ -17,7 +17,6 @@ public:
     }
     Book(string author, string name, string publisger, int year, int pages) {   //Конструктор с параметрами
         this->author = author; this->name = name; this->publisger = publisger; this->year = year; this->pages = pages;
-    // Присваеваем полям значения
     }
     bool operator<(const Book& b) const {   // Перегрузка оператора "<"
         return author < b.author;   // Сравниваем книги по алфавиту по полю ФИО автора
